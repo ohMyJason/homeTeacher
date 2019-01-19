@@ -1,0 +1,208 @@
+<!DOCTYPE html >
+<head>
+    <meta charset="utf-8" />
+    <title>查看已经预约的学员</title>
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/list.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery-1.x.js"></script>
+    <!--<script type="text/javascript" src="tableOperator.js"></script>-->
+</head>
+<body>
+<div class="place"> <span>您当前的位置：</span>
+    <ul class="placeul">
+        <li><a href="homeage.html">学员管理</a></li>
+        <li><a href="#">查看已经预约的学员</a></li>
+    </ul>
+</div>
+<div class="rightinfo">
+    <!--<div class="tools">-->
+    <!--<ul class="toolbar">-->
+    <!--<li ><span>P<img src="images/t01.png" /></span>添加</li>-->
+    <!--</ul>-->
+    <!--<ul class="seachform">-->
+    <!--<li>-->
+    <!--<div class="vocation">-->
+    <!--<select class="select3">-->
+    <!--<option>市场部</option>-->
+    <!--<option>人事部</option>-->
+    <!--<option>研究部</option>-->
+    <!--<option>设计部</option>-->
+    <!--</select>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<input type="text" class="scinput" value="请输入员工编号"/>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<input name="searchBtn" type="button" class="scbtn" value="查询"/>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+
+    <table class="tablelist">
+        <thead>
+        <tr>
+            <th><input name="checkAll" type="checkbox" id="checkAll" onchange="selectAll()"/>全选/
+                <input name="checkOther" type="checkbox" id="checkOther" onchange="selectOther()"/>反选
+            </th>
+            <th>学生姓名</th>
+            <th>年级</th>
+            <th>地址</th>
+            <th>电话</th>
+            <th>科目</th>
+            <th>状态</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input name="checkItem" type="checkbox" value="" /></td>
+            <td >张三</td>
+            <td>六年级</td>
+            <td>集美区银江路186号集美大学第五社区引桐楼</td>
+            <td>18759569620</td>
+            <td>语文</td>
+            <td>预约中</td>
+        <tr class="odd">
+            <td><input name="checkItem" type="checkbox" value="" /></td>
+            <td >张三</td>
+            <td>六年级</td>
+            <td>集美区银江路186号集美大学第五社区引桐楼</td>
+            <td>18759569620</td>
+            <td>语文</td>
+            <td>预约中</td>
+        </tr>
+        <tr>
+            <td><input name="checkItem" type="checkbox" value="" /></td>
+            <td >张三</td>
+            <td>六年级</td>
+            <td>集美区银江路186号集美大学第五社区引桐楼</td>
+            <td>18759569620</td>
+            <td>语文</td>
+            <td>预约中</td>
+        </tr>
+        <tr class="odd">
+            <td><input name="checkItem" type="checkbox" value="" /></td>
+            <td >张三</td>
+            <td>六年级</td>
+            <td>集美区银江路186号集美大学第五社区引桐楼</td>
+            <td>18759569620</td>
+            <td>语文</td>
+            <td>预约中</td>
+        </tr>
+        <tr>
+            <td><input name="checkItem" type="checkbox" value="" /></td>
+            <td >张三</td>
+            <td>六年级</td>
+            <td>集美区银江路186号集美大学第五社区引桐楼</td>
+            <td>18759569620</td>
+            <td>语文</td>
+            <td>预约中</td>
+        </tr>
+        <!--<form id="form1"  method="get"  >-->
+        <!--<tr>-->
+
+        <!--<td>-->
+        <!--<input name="goods" type="checkbox" value=""/></td>-->
+        <!--<td>-->
+        <!--<input type="text" name="wnum" value="请输入员工编号" onfocus="javascript:if(this.value=='请输入员工号');this.value=''-->
+        <!--"></td>-->
+        <!--<td>-->
+        <!--<input type="text" name="ID" value="请输入身份证" onfocus="javascript:if(this.value=='请输入身份证');this.value=''"/></td>-->
+        <!--<td>-->
+        <!--<input type="text" name="name" value="请输入姓名"onfocus="javascript:if(this.value=='请输入姓名');this.value=''"/></td>-->
+        <!--<td>-->
+        <!--<select name="1">-->
+        <!--<option>市场部</option>-->
+        <!--<option>人事部</option>-->
+        <!--<option>研究部</option>-->
+        <!--<option>设计部</option>-->
+        <!--</select>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<select name="2" >-->
+        <!--<option>办公软件</option>-->
+        <!--<option>商务礼仪</option>-->
+        <!--<option>项目管理</option>-->
+        <!--<option>谈判技巧</option>-->
+        <!--</select>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<input type="date" name="time"/></td>-->
+        <!--<td>-->
+        <!--<select name="3">-->
+        <!--<option>优秀</option>-->
+        <!--<option>良好</option>-->
+        <!--<option>及格</option>-->
+        <!--</select>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<input type="submit" id="sub" name="sub" value="提交">-->
+        <!--&lt;!&ndash;//<a href="#" class="tablelink">删除</a>&ndash;&gt;-->
+        <!--</td>-->
+
+        <!--</tr>-->
+        <!--//设定新添加元素的样式-->
+        <!--</form>-->
+        </tbody>
+    </table>
+
+    <script type="text/javascript">
+        //全选或全不选
+        function selectAll(){
+            var items=document.getElementsByName("checkItem");
+            var checkAll=document.getElementById("checkAll");
+            var checkOther=document.getElementById("checkOther");
+            checkOther.checked=false;
+            for(var i=0;i<items.length;i++){
+                items[i].checked=checkAll.checked;
+            }
+        }
+        //反选
+        function selectOther(){
+            var items=document.getElementsByName("checkItem");
+            var checkAll=document.getElementById("checkAll");
+            var checkOther=document.getElementById("checkOther");
+            checkAll.checked=false;
+            for(var i=0;i<items.length;i++){
+                items[i].checked=!items[i].checked;
+            }
+        }
+    </script>
+    <script type="text/javascript" src="js/jquery-1.x.js"></script>
+    <script type="text/javascript">
+        function selectAll(){
+            var items=$("[name='checkItem']");
+            var checkAll=$("#checkAll");
+            $("#checkOther").prop("checked",false);
+            for(var i=0;i<items.length;i++){
+                $(items[i]).prop("checked",checkAll.prop("checked"));
+            }
+        }
+        function selectOther(){
+            var items=$("[name='checkItem']");
+            $("#checkAll").prop("checked",false);
+            for(var i=0;i<items.length;i++){
+                $(items[i]).prop("checked",!$(items[i]).prop("checked"));
+            }
+        }
+    </script>
+    <!--<div class="pagin">-->
+    <!--<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>-->
+    <!--<ul class="paginList">-->
+    <!--<li class="paginItem"><a href="#"><span class="pagepre"></span></a></li>-->
+    <!--<li class="paginItem"><a href="#">1</a></li>-->
+    <!--<li class="paginItem current"><a href="#">2</a></li>-->
+    <!--<li class="paginItem"><a href="#">3</a></li>-->
+    <!--<li class="paginItem"><a href="#">4</a></li>-->
+    <!--<li class="paginItem"><a href="#">5</a></li>-->
+    <!--<li class="paginItem more"><a href="#">...</a></li>-->
+    <!--<li class="paginItem"><a href="#">10</a></li>-->
+    <!--<li class="paginItem"><a href="#"><span class="pagenxt"></span></a></li>-->
+    <!--</ul>-->
+    <!--</div>-->
+
+</div>
+
+</body>
+</html>
+</html>

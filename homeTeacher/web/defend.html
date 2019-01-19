@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人事系统管理</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+
+        }
+        aside span{
+            color: white;
+            font-size: larger;
+        }
+
+        .myid{
+            position: absolute;
+            top:470px;
+            left: 65%;
+        }
+
+
+
+
+    </style>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href=" css/content.css" />
+    <script type="text/javascript" src="js/jquery-1.x.js"> </script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        function Savedata() {
+            var isOK = confirm("是否进行数据备份");
+            if (isOK) {
+                window.location.href='confirmkey.html';
+            }
+        }
+
+
+    </script>
+</head>
+<body class="safe">
+<header style="width: 100% ;height: 200px " >
+</header>
+<main style="width: 100%;height: 400px">
+    <article style="width: 50%;float: left">
+        <form action="" method="post" enctype="multipart/form-data" id="form">
+            <input type="hidden" id="content" value="">
+            <input type="button" class="safe-lbtn"  onclick="Savedata()" value="数据备份" >
+        </form>
+
+    </article>
+    <aside style="width: 50%;height: 200px ;float:right">
+        <form action="../controller/defendrebuiltController.php" method="post" enctype="multipart/form-data" >
+            <span class="myid">导入文件:</span>
+            <input type="file" id="file"  name="file" accept="" style="position: absolute; top:470px;left: 71% " value="">
+            <input type="submit" class="safe-rbtn"    value="数据库重建">
+        </form>
+    </aside>
+</main>
+<footer style="width: 100%;height: 30%">
+
+</footer>
+
+</body>
+</html>
+
